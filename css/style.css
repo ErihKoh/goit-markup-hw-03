@@ -1,0 +1,210 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-bg-color: #ffffff;
+  --add-bg-color: #f5f4fa;
+}
+
+body {
+  background: var(--primery-bg-color);
+  color: var(--primery-text-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* site-nav */
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+.web:hover {
+  color: var(--title-text-color);
+}
+
+.site-nav-link a {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link a:hover,
+.site-nav-link a:focus {
+  color: var(--accent-color);
+}
+
+.contatcs a {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contatcs a:hover,
+.contatcs a:focus {
+  color: var(--accent-color);
+}
+/* hero */
+
+.hero-title {
+  color: #f5f4fa;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  color: #ffffff;
+  background: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+}
+.section-items {
+  color: #f5f4fa;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section .title {
+  color: var(--title-text-color);
+}
+.section-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* team-section */
+
+.team-section {
+  background: var(--add-bg-color);
+}
+.team-section .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-profession {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* clients */
+
+.clients-section .title {
+  color: var(--title-text-color);
+}
+
+/* footer */
+
+footer {
+  background: #2f303a;
+}
+.web-footer {
+  color: var(--accent-color);
+}
+.web-footer:hover {
+  color: var(--primery-bg-color);
+}
+.studio-footer {
+  color: var(--primery-bg-color);
+}
+.studio-footer:hover {
+  color: var(--accent-color);
+}
+.city {
+  color: var(--primery-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.community {
+  color: var(--primery-bg-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* portfolio */
+
+/* buttons */
+
+.radio-button {
+  background: var(--add-bg-color);
+}
+.radio-button:hover {
+  background: var(--accent-color);
+  color: var(--primery-bg-color);
+}
+
+.radio-button:focus {
+  background: var(--accent-color);
+  color: var(--primery-bg-color);
+}
+
+/* examples */
+.examples .title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-item {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
