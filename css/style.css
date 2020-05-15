@@ -12,6 +12,9 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+.background-add {
+  background-color: var(--add-bg-color);
+}
 
 .list {
   list-style: none;
@@ -46,10 +49,43 @@ a {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--title-text-color);
+}
+
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-items {
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section .title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.66;
+}
+.section-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* no padding */
+.no-padding {
+  padding-bottom: 0;
 }
 
 /* site-nav */
@@ -100,13 +136,15 @@ p {
 .contatcs a:focus {
   color: var(--accent-color);
 }
+.centered {
+  text-align: center;
+}
+
 /* hero */
 
 .hero {
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
   outline: 1px solid green;
 }
 .hero-title {
@@ -124,41 +162,20 @@ p {
   font-weight: bold;
 }
 
-/* section */
-.section-title {
-  color: var(--title-text-color);
-}
-.section-items {
-  color: #000000;
-  font-weight: bold;
+/* our quality */
+.quality-title {
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.section .title {
-  color: var(--title-text-color);
-}
-.section-text {
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-/* our quality */
-.section .quality {
-  margin-bottom: 94px;
-}
 
 /* team-section */
 
-.team-section {
-  background: var(--add-bg-color);
-}
-.team-section .title {
-  color: var(--title-text-color);
-  font-weight: bold;
-}
-
 .team-title {
+  padding-top: 30px;
+  padding-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -236,7 +253,9 @@ footer {
 }
 
 /* examples */
-.examples .title {
+.examples-title {
+  padding-top: 20px;
+  padding-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -244,6 +263,7 @@ footer {
 }
 
 .examples-item {
+  padding-bottom: 20px;
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.87;
