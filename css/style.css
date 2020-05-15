@@ -422,11 +422,3 @@ address p:not(:last-child) {
   font-size: 16px;
   line-height: 1.87;
 }
-
-.backg {
-  background-color: indianred;
-}
-
-.backgtwo {
-  background-color: lawngreen;
-}
