@@ -399,15 +399,23 @@ address p:not(:last-child) {
 
 .examples .item {
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
 }
 
 .examples .item:nth-child(3n) {
   margin-right: 0;
 }
 
+.examples .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .examples-title {
   padding-top: 20px;
   padding-bottom: 4px;
+  padding-left: 24px;
 
   color: var(--title-text-color);
   font-size: 18px;
@@ -417,6 +425,7 @@ address p:not(:last-child) {
 
 .examples-item {
   padding-bottom: 20px;
+  padding-left: 24px;
 
   color: var(--primery-text-color);
   font-size: 16px;
