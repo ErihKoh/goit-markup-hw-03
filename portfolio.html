@@ -16,41 +16,48 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="site-nav conteiner">
-        <a href="./index.html" class="logo">
-          <span class="web">Web</span> Studio</a
-        >
-        <ul class="site-nav-link list">
-          <li>
-            <a href="./index.html">Студия</a>
+      <div class="conteiner header-item">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo">
+            <span class="web">Web</span> Studio</a
+          >
+          <ul class="site-nav-link list">
+            <li class="item">
+              <a href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contatcs list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com">
+              <img
+                src="./image/letter.svg"
+                width="16"
+                height="11"
+                alt="конверт"
+              />
+              info@devstudio.com
+            </a>
           </li>
-          <li>
-            <a href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
+          <li class="item">
+            <a href="tel:+380961111111">
+              <img
+                src="./image/phone.svg"
+                width="10"
+                height="15"
+                alt="телефон"
+              />
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="contatcs conteiner list">
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <img
-              src="./image/letter.svg"
-              width="16"
-              height="11"
-              alt="конверт"
-            />
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111">
-            <img src="./image/phone.svg" width="10" height="15" alt="телефон" />
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--<h1>наши работы</h1>  -->
@@ -59,20 +66,20 @@
         <!-- фильтры -->
 
         <div class="conteiner">
-          <ul class="list">
-            <li>
+          <ul class="filter list">
+            <li class="item">
               <button class="radio-button" type="button">Все</button>
             </li>
-            <li>
+            <li class="item">
               <button class="radio-button" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="item">
               <button class="radio-button" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="item">
               <button class="radio-button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="item">
               <button class="radio-button" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -238,16 +245,18 @@
       </section>
     </main>
     <footer>
-      <div class="conteiner">
-        <a href="./index.html" class="logo">
-          <span class="web-footer">Web</span>
-          <span class="studio-footer">Studio</span>
-        </a>
-        <address>
-          <p class="city">г. Киев, пр-т Леси Украинки 26</p>
-          <p class="contacts-footer">info@example.com</p>
-          <p class="contacts-footer">+38 099 111 11 11</p>
-        </address>
+      <div class="footer-flex conteiner">
+        <div>
+          <a href="./index.html" class="logo-footer">
+            <span class="web-footer">Web</span>
+            <span class="studio-footer">Studio</span>
+          </a>
+          <address>
+            <p class="city">г. Киев, пр-т Леси Украинки 26</p>
+            <p class="contacts-footer">info@example.com</p>
+            <p class="contacts-footer phone">+38 099 111 11 11</p>
+          </address>
+        </div>
         <div>
           <p class="community">
             Присоединяйтесь
@@ -267,10 +276,15 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">
-          2020 | Developed by GoIT Students
-        </p>
+        <div>
+          <p class="subscribe">
+            подписаться на рассылку
+          </p>
+        </div>
       </div>
+      <p class="copyright centered">
+        2020 | Developed by GoIT Students
+      </p>
     </footer>
   </body>
 </html>

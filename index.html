@@ -16,43 +16,52 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="site-nav conteiner">
-        <a href="./index.html" class="logo">
-          <span class="web">Web</span> Studio</a
-        >
-        <ul class="site-nav-link list">
-          <li>
-            <a href="./index.html">Студия</a>
+      <div class="conteiner header-item">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo">
+            <span class="web">Web</span> Studio</a
+          >
+          <ul class="site-nav-link list">
+            <li class="item">
+              <a href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contatcs list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com">
+              <img
+                src="./image/letter.svg"
+                width="16"
+                height="11"
+                alt="конверт"
+              />
+              info@devstudio.com
+            </a>
           </li>
-          <li>
-            <a href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
+          <li class="item">
+            <a href="tel:+380961111111">
+              <img
+                src="./image/phone.svg"
+                width="10"
+                height="15"
+                alt="телефон"
+              />
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="contatcs conteiner list">
-        <li>
-          <a href="mailto:info@devstudio.com">
-            <img
-              src="./image/letter.svg"
-              width="16"
-              height="11"
-              alt="конверт"
-            />
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111">
-            <img src="./image/phone.svg" width="10" height="15" alt="телефон" />
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
+      <!-- hero -->
+
       <div>
         <section class="hero centered">
           <h1 class="hero-title conteiner">
@@ -67,10 +76,10 @@
 
       <!-- <h2>Наши преимущества</h2> -->
 
-      <section class="section no-padding">
-        <div class="quality conteiner">
+      <section class="section conteiner no-padding">
+        <div class="quality">
           <ul class="list">
-            <li>
+            <li class="item">
               <img
                 src="./image/antenna.svg"
                 width="70"
@@ -83,7 +92,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img src="./image/clock1.svg" width="70" height="70" alt="часы" />
               <h3 class="quality-title">Пунктуальность</h3>
               <p class="section-text">
@@ -91,7 +100,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./image/diagram1.svg"
                 width="70"
@@ -104,7 +113,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./image/astronaut1.svg"
                 width="70"
@@ -123,40 +132,40 @@
 
       <!-- наши возможности -->
 
-      <section class="section">
-        <div class="app-section conteiner">
-          <h2 class="title centered">Чем мы занимаемся</h2>
+      <section class="section conteiner">
+        <h2 class="title centered">Чем мы занимаемся</h2>
+        <div class="app-section">
           <ul class="list">
-            <li>
+            <li class="item">
               <img
                 src="./image/laptop.jpg"
                 width="380"
                 height="294"
                 alt="ноутбук"
               />
-              <p class="section-items">
+              <p class="section-items centered">
                 Десктопные приложения
               </p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./image/phone.jpg"
                 width="380"
                 height="294"
                 alt="телефон"
               />
-              <p class="section-items">
+              <p class="section-items centered">
                 Мобильные приложения
               </p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./image/screen.jpg"
                 width="380"
                 height="294"
                 alt="экран"
               />
-              <p class="section-items">
+              <p class="section-items centered">
                 Дизайнерские решения
               </p>
             </li>
@@ -166,11 +175,11 @@
 
       <!-- команда -->
 
-      <section class="section background-add">
-        <div class="team-section conteiner">
+      <div class="team-conteiner">
+        <section class="section conteiner">
           <h2 class="title centered">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="team-section list">
+            <li class="item">
               <div>
                 <img
                   src="./image/john.jpg"
@@ -178,8 +187,8 @@
                   height="260"
                   alt="дизайнер Джон"
                 />
-                <h3 class="team-title">John Smith</h3>
-                <p class="team-profession">Product Designer</p>
+                <h3 class="team-title centered">John Smith</h3>
+                <p class="team-profession centered">Product Designer</p>
               </div>
               <ul class="team-link list">
                 <li>
@@ -196,7 +205,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <div>
                 <img
                   src="./image/marta.jpg"
@@ -204,8 +213,8 @@
                   height="260"
                   alt="разработчик Марта"
                 />
-                <h3 class="team-title">Marta Stewart</h3>
-                <p class="team-profession">Frontend Developer</p>
+                <h3 class="team-title centered">Marta Stewart</h3>
+                <p class="team-profession centered">Frontend Developer</p>
               </div>
               <ul class="team-link list">
                 <li>
@@ -222,7 +231,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <div>
                 <img
                   src="./image/robert.jpg"
@@ -230,8 +239,8 @@
                   height="260"
                   alt="маркетолог Роберт"
                 />
-                <h3 class="team-title">Robert Jakis</h3>
-                <p class="team-profession">Marketing</p>
+                <h3 class="team-title centered">Robert Jakis</h3>
+                <p class="team-profession centered">Marketing</p>
               </div>
               <ul class="team-link list">
                 <li>
@@ -248,7 +257,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <div>
                 <img
                   src="./image/martin.jpg"
@@ -256,8 +265,8 @@
                   height="260"
                   alt="дизайнер Мартин"
                 />
-                <h3 class="team-title">Martin Doe</h3>
-                <p class="team-profession">UI Designer</p>
+                <h3 class="team-title centered">Martin Doe</h3>
+                <p class="team-profession centered">UI Designer</p>
               </div>
               <ul class="team-link list">
                 <li>
@@ -275,91 +284,59 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- клиенты -->
 
-      <section class="section">
-        <div class="client-section conteiner">
-          <h2 class="title centered">Постоянные клиенты</h2>
-
-          <ul class="section-clients list">
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo1.svg"
-                  width="44"
-                  height="47"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo2.svg"
-                  width="40"
-                  height="52"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo3.svg"
-                  width="41"
-                  height="41"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo4.svg"
-                  width="82"
-                  height="40"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo5.svg"
-                  width="59"
-                  height="47"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./image/logo6.svg"
-                  width="88"
-                  height="44"
-                  alt="логотип"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+      <section class="section conteiner">
+        <h2 class="title centered">Постоянные клиенты</h2>
+        <ul class="clients-section list">
+          <li>
+            <a href="#">
+              <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <a href="#" aria-label="логотип"> </a>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
-      <div class="conteiner">
-        <a href="./index.html" class="logo">
-          <span class="web-footer">Web</span>
-          <span class="studio-footer">Studio</span>
-        </a>
-        <address>
-          <p class="city">г. Киев, пр-т Леси Украинки 26</p>
-          <p class="contacts-footer">info@example.com</p>
-          <p class="contacts-footer">+38 099 111 11 11</p>
-        </address>
+      <div class="footer-flex conteiner">
+       <div>
+          <a href="./index.html" class="logo-footer">
+            <span class="web-footer">Web</span>
+            <span class="studio-footer">Studio</span>
+          </a>
+          <address>
+            <p class="city">г. Киев, пр-т Леси Украинки 26</p>
+            <p class="contacts-footer">info@example.com</p>
+            <p class="contacts-footer phone">+38 099 111 11 11</p>
+          </address>
+       </div>
         <div>
           <p class="community">
             Присоединяйтесь
@@ -379,10 +356,15 @@
             </li>
           </ul>
         </div>
-        <p class="copyright">
-          2020 | Developed by GoIT Students
-        </p>
+        <div>
+          <p class="subscribe">
+            подписаться на рассылку
+          </p>
+        </div>
       </div>
+      <p class="copyright centered">
+        2020 | Developed by GoIT Students
+      </p>
     </footer>
   </body>
 </html>
