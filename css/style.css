@@ -356,6 +356,10 @@ address p:not(:last-child) {
 
 /* portfolio */
 
+.header-boreder {
+  border: 1px solid #ececec;
+}
+
 /* filter */
 
 .filter {
