@@ -88,6 +88,11 @@ p {
 
 /* header */
 
+.page-header {
+  width: 1600px;
+  border-bottom: 1px solid #ececec;
+}
+
 /* site-nav */
 .header-item {
   display: flex;
@@ -146,6 +151,10 @@ p {
 
 .site-nav-link a:hover,
 .site-nav-link a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav-link .active {
   color: var(--accent-color);
 }
 
@@ -343,6 +352,20 @@ address p:not(:last-child) {
   margin-left: 179px;
 }
 
+.social a {
+  color: var(--primery-bg-color);
+  font-size: 44px;
+}
+
+.social a:hover,
+.social a:focus {
+  color: var(--accent-color);
+}
+
+.social .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .subscribe {
   margin-top: 56px;
   margin-left: 164px;
@@ -361,10 +384,6 @@ address p:not(:last-child) {
 }
 
 /* portfolio */
-
-.header-boreder {
-  border: 1px solid #ececec;
-}
 
 /* filter */
 
