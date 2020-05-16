@@ -337,6 +337,12 @@ address p:not(:last-child) {
   text-transform: uppercase;
 }
 
+.social {
+  display: flex;
+  margin-top: 21px;
+  margin-left: 179px;
+}
+
 .subscribe {
   margin-top: 56px;
   margin-left: 164px;
