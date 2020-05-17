@@ -151,6 +151,11 @@ p {
   letter-spacing: 0.02em;
 }
 
+.border-nav {
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px;
+}
+
 .site-nav-link a:hover,
 .site-nav-link a:focus {
   color: var(--accent-color);
