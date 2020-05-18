@@ -151,6 +151,11 @@ p {
   letter-spacing: 0.02em;
 }
 
+.site-nav-link .item {
+  display: flex;
+  align-items: center;
+}
+
 .border-nav {
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
@@ -190,6 +195,11 @@ p {
 .contatcs a:focus {
   color: var(--accent-color);
 }
+.contatcs .item {
+  display: flex;
+  align-items: center;
+}
+
 .centered {
   text-align: center;
 }
