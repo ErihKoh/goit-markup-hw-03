@@ -83,11 +83,6 @@ p {
   line-height: 1.71;
 }
 
-/* no padding */
-.no-padding {
-  padding-bottom: 0;
-}
-
 /* header */
 
 .page-header {
@@ -231,6 +226,10 @@ p {
 }
 
 /* our quality */
+
+.border-quality {
+  border-bottom: 1px solid #ececec;
+}
 
 .quality .list {
   display: flex;
