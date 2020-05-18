@@ -229,6 +229,7 @@ p {
 
 .border-quality {
   border-bottom: 1px solid #ececec;
+  width: 1170px;
 }
 
 .quality .list {
@@ -275,7 +276,6 @@ p {
 }
 
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -289,6 +289,21 @@ p {
   line-height: 1.19;
 }
 
+.card-team {
+  padding-top: 30px;
+  padding-bottom: 36px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.team-img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+}
 /* clients */
 
 .clients-section .title {
@@ -305,11 +320,14 @@ footer {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 21px;
 }
 
 .logo-footer {
   display: block;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -352,7 +370,7 @@ address p:not(:last-child) {
   margin-bottom: 88px;
 }
 .community {
-  margin-top: 56px;
+  /* margin-top: 56px; */
   margin-left: 179px;
 
   color: var(--primery-bg-color);
@@ -395,12 +413,16 @@ address p:not(:last-child) {
 
 .copyright {
   padding-top: 18px;
-  padding-bottom: 21px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* padding-bottom: 21px; */
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
+}
+
+.border-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1170px;
 }
 
 /* portfolio */
@@ -449,8 +471,6 @@ address p:not(:last-child) {
 .examples .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
 }
 
 .examples .item:nth-child(3n) {
@@ -462,10 +482,6 @@ address p:not(:last-child) {
 }
 
 .examples-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
-
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -473,10 +489,24 @@ address p:not(:last-child) {
 }
 
 .examples-item {
-  padding-bottom: 20px;
-  padding-left: 24px;
-
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.card-content {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
