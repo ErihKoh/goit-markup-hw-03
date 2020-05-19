@@ -58,6 +58,8 @@ p {
 }
 .img-block {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* section */
 .section {
@@ -79,6 +81,8 @@ p {
   line-height: 1.66;
 }
 .section-text {
+  width: 270px;
+
   font-size: 14px;
   line-height: 1.71;
 }
@@ -210,6 +214,7 @@ p {
 }
 .hero-title {
   margin-bottom: 46px;
+  width: 700px;
 
   color: #f5f4fa;
   font-weight: 900;
@@ -229,7 +234,6 @@ p {
 
 .border-quality {
   border-bottom: 1px solid #ececec;
-  width: 1170px;
 }
 
 .quality .list {
@@ -322,7 +326,7 @@ footer {
   display: flex;
   align-items: baseline;
   padding-top: 48px;
-  padding-bottom: 21px;
+  padding-bottom: 28px;
 }
 
 .logo-footer {
@@ -366,9 +370,9 @@ address p:not(:last-child) {
   font-size: 14px;
   line-height: 1.71;
 }
-.phone {
-  margin-bottom: 88px;
-}
+.phone 
+  /* margin-bottom: 28px; */
+  
 .community {
   /* margin-top: 56px; */
   margin-left: 179px;
@@ -401,7 +405,6 @@ address p:not(:last-child) {
 }
 
 .subscribe {
-  margin-top: 56px;
   margin-left: 164px;
 
   color: var(--primery-bg-color);
@@ -413,7 +416,7 @@ address p:not(:last-child) {
 
 .copyright {
   padding-top: 18px;
-  /* padding-bottom: 21px; */
+  padding-bottom: 21px;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
@@ -485,7 +488,6 @@ address p:not(:last-child) {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .examples-item {
@@ -495,9 +497,7 @@ address p:not(:last-child) {
 }
 
 .card-content {
-  padding-top: 24px;
-  padding-left: 24px;
-  padding-bottom: 24px;
+  padding: 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
