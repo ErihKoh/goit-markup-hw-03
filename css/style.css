@@ -28,6 +28,10 @@ a {
   margin: 0 auto;
 }
 
+.site-wigth {
+  width: 1600px;
+}
+
 .button {
   display: inline-block;
 
