@@ -60,8 +60,11 @@ p {
 }
 /* section */
 .section {
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-items {
@@ -482,7 +485,6 @@ address p:not(:last-child) {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.03em;
 }
 
 .examples-item {
