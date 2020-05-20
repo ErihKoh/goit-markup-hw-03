@@ -60,11 +60,8 @@ p {
 }
 /* section */
 .section {
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section-items {
