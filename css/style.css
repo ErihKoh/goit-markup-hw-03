@@ -94,7 +94,7 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-/* site-nav */
+/* logo*/
 .header-item {
   display: flex;
   align-items: center;
@@ -123,6 +123,8 @@ p {
 .web:hover {
   color: var(--title-text-color);
 }
+
+/* site nav */
 
 .site-nav {
   display: flex;
@@ -282,48 +284,31 @@ p {
   margin-right: 30px;
 }
 
-.quality .item:nth-child(1)::before {
+.quality .item::before {
   display: block;
   height: 120px;
   content: "";
-  background-image: url(../image/antenna.svg);
   background-color: #f5f4fa;
   background-size: 70px, contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.quality .item:nth-child(1)::before {
+  background-image: url(../image/antenna.svg);
 }
 
 .quality .item:nth-child(2)::before {
-  display: block;
-  height: 120px;
-  content: "";
   background-image: url(../image/clock1.svg);
-  background-color: #f5f4fa;
-  background-size: 70px, contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .quality .item:nth-child(3)::before {
-  display: block;
-  height: 120px;
-  content: "";
   background-image: url(../image/diagram1.svg);
-  background-color: #f5f4fa;
-  background-size: 70px, contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .quality .item:nth-child(4)::before {
-  display: block;
-  height: 120px;
-  content: "";
   background-image: url(../image/astronaut1.svg);
   background-color: #f5f4fa;
-  background-size: 70px, contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 /* app siction */
@@ -368,7 +353,7 @@ p {
 
 .card-team {
   padding-top: 30px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background: #ffffff;
@@ -381,6 +366,54 @@ p {
   border-top-right-radius: 4px;
   overflow: hidden;
 }
+
+.team-link {
+  display: flex;
+  height: 44px;
+  padding: 12px 44px;
+  margin-top: 16px;
+}
+
+.icon-instagram {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/instagram.svg);
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.icon-tweet {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/tweet.svg);
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.icon-face {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/face.svg);
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.icon-in {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/linkedin.svg);
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.team-link li:not(:last-child) {
+  margin-right: 40px;
+}
+
 /* clients */
 
 .clients-section .title {
@@ -444,10 +477,10 @@ address p:not(:last-child) {
   font-size: 14px;
   line-height: 1.71;
 }
-
+.footer-social {
+  margin-left: 69px;
+}
 .community {
-  margin-left: 179px;
-
   color: var(--primery-bg-color);
   font-weight: bold;
   font-size: 14px;
@@ -458,17 +491,38 @@ address p:not(:last-child) {
 .social {
   display: flex;
   margin-top: 21px;
-  margin-left: 179px;
 }
 
 .social a {
-  color: var(--primery-bg-color);
-  font-size: 44px;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background-size: 20px; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-inst {
+  background-image: url(../image/inf.svg);
+}
+
+.social-tw {
+  background-image: url(../image/tweef.svg);
+}
+
+.social-face {
+  background-image: url(../image/facf.svg);
+}
+
+.social-link {
+  background-image: url(../image/linkf.svg);
 }
 
 .social a:hover,
 .social a:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .social .item:not(:last-child) {
@@ -494,6 +548,7 @@ address p:not(:last-child) {
 
 .subscribe-button {
   display: inline-flex;
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -589,10 +644,16 @@ address p:not(:last-child) {
   line-height: 2;
 }
 
-.examples-item {
+.examples-text {
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.examples .item:hover,
+.examples .item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
